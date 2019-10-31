@@ -2,34 +2,33 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-import os
 from unittestfram.example.mathfunc import *
 
 
 class TestMathFunc(unittest.TestCase):
-    # @classmethod
-    # def setUpClass(cls):
-    #     print("这里是所有测试用例前的准备工作")
-    #
-    # @classmethod
-    # def tearDownClass(cls):
-    #     print("这里是所有测试用例后的准备工作")
-    #
-    # @classmethod
-    # def setUp(cls):
-    #     print("这里是一个测试用例前的准备工作")
-    #
-    # @classmethod
-    # def tearDown(cls):
-    #     print("这里是一个测试用例后的准备工作")
+    @classmethod
+    def setUpClass(cls):
+        print("这里是所有测试用例前的准备工作")
 
-    # @unittest.skip("跳过当前测试用例")
-    # def test_add(self):
-    #     self.assertEqual(3, add(1, 2))
+    @classmethod
+    def tearDownClass(cls):
+        print("这里是所有测试用例后的准备工作")
 
-    # def test_minus(self):
-    #     self.skipTest("跳过这个测试用例")
-    #     self.assertEqual(1, minus(3, 2))
+    @classmethod
+    def setUp(cls):
+        print("这里是一个测试用例前的准备工作")
+
+    @classmethod
+    def tearDown(cls):
+        print("这里是一个测试用例后的准备工作")
+
+    @unittest.skip("跳过当前测试用例")
+    def test_add(self):
+        self.assertEqual(3, add(1, 2))
+
+    def test_minus(self):
+        self.skipTest("跳过这个测试用例")
+        self.assertEqual(1, minus(3, 2))
 
     def test_multi(self):
         """测试乘法"""
