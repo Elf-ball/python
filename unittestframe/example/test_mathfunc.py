@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from unittestfram.example.mathfunc import *
+from unittestframe.example.mathfunc import *
 
 
 class TestMathFunc(unittest.TestCase):

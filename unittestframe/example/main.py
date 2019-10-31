@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from unittestfram.example.test_mathfunc import TestMathFunc
+from unittestframe.example.test_mathfunc import TestMathFunc
 from BeautifulReport import BeautifulReport
 
 
