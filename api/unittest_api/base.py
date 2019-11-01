@@ -20,4 +20,8 @@ class Base(unittest.TestCase):
             "password": "xxx"
         }
         # res = requests.post(url, json=data)
+        """
+        定义一个属性，其余地方继承base这个类时，就拥有了这个属性，再其他类中执行self.url就等于获取到了url这个属性的值
+        这里可以用来返回session或者cookie这些值
+        """
         cls.url = url
