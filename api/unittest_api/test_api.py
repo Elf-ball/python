@@ -6,15 +6,21 @@ from api.schema.weather import cd_weather
 from api.unittest_api import urlpath
 from api.unittest_api.base import Base
 from jsonschema import validate
+from parameterized import parameterized
 
 
 class API(Base):
-    def test_select_weather(self):
+
+    @parameterized.expand([  # 使用不同的参数多次执行此用例
+        ("510100",),  # 正确的key
+        ("500116",)  # 错误的key
+    ])
+    def test_select_weather(self, city_code):
         """测试高德地图查询天气接口"""
         url = urlpath.url(urlpath.weather)  # 拼接想要测试的接口
         data = {
             "key": "95f5a2b5e0aab802f07c5d4c91afc4cc",  # 高德地图开发者账户中申请的key
-            "city": "510100",  # 城市的code，由高德地图提供
+            "city": city_code,  # 城市的code，由高德地图提供
             "extensions": "base",
             "output": "json"  # 期望返回的数据类型
         }
