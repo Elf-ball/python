@@ -12,8 +12,8 @@ from parameterized import parameterized
 class API(Base):
 
     @parameterized.expand([  # 使用不同的参数多次执行此用例
-        ("510100",),  # 正确的key
-        ("500116",)  # 错误的key
+        ("510100",),
+        ("500116",)
     ])
     def test_select_weather(self, city_code):
         """测试高德地图查询天气接口"""
