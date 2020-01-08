@@ -11,3 +11,7 @@
   - [python BeautifulReport用法](https://www.twblogs.net/a/5bb043142b7177781a0fe84e/zh-cn)
   - [接口测试理论基础](https://www.jianshu.com/p/9d3f991c901a)
   - [python list解析和生成表达式](https://www.cnblogs.com/moinmoin/archive/2011/03/10/lsit-comprehensions-generators.html)
+
+# python简易工具
+  - [python格式转schema格式](https://easy-json-schema.github.io/?tdsourcetag=s_pcqq_aiomsg)
+  - [git使用简介](https://www.bootcss.com/p/git-guide/)
