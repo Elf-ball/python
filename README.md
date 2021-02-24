@@ -5,6 +5,9 @@
   - pytest
   - unittest
 
+# Python UI自动化框架
+  - Selenium
+
 # python学习资料链接
   - [python操作excel，读取数据并且把测试结果写入excel](https://testerhome.com/topics/10714)
   - [unnittest中addtest和testloader的用法](https://www.jianshu.com/p/95b19133948c)
